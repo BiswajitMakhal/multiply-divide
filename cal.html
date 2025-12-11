@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply or Divide</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buttons-con {
+            margin-top: 8px;
+        }
+
+        #first,
+        #second {
+            border-radius: 5px;
+        }
+
+
+        .buttons-con>button {
+            border-radius: 8px;
+            background-color: lightgreen;
+            color: black;
+        }
+
+        #result {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span>1st number:</span>
+        <input type="text" name="text" id="first">
+        <span>2nd number:</span>
+        <input type="text" name="text" id="second">
+        <div class="buttons-con">
+            <button id="mul">Multiply</button>
+            <button id="div">Divide</button>
+        </div>
+        <p>The result is:
+            <span id="result"></span>
+        </p>
+    </div>
+    <script>
+        let inputFirst = document.getElementById("first");
+        let inputSecond = document.getElementById("second");
+        let Multiply = document.getElementById("mul");
+        let Divide = document.getElementById("div");
+        let Result = document.getElementById("result")
+
+        Multiply.addEventListener("click", () => {
+            // Result.textContent = inputFirst.value * inputSecond.value;
+            Result.textContent = "Akshay loves boys";
+        })
+        Divide.addEventListener("click", () => {
+            // Result.textContent = inputFirst.value / inputSecond.value;
+            Result.textContent = "Akshay loves twins";
+
+        })
+
+    </script>
+</body>
+
+</html>
