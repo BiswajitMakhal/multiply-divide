@@ -57,9 +57,17 @@
         let Result = document.getElementById("result")
 
         Multiply.addEventListener("click", () => {
+            if (inputFirst.value === "" && inputSecond.value === "") {
+                alert("type something...");
+                return false;
+            }
             Result.textContent = inputFirst.value * inputSecond.value;
         })
         Divide.addEventListener("click", () => {
+            if (inputFirst.value === "" && inputSecond.value === "") {
+                alert("type something...");
+                return false;
+            }
             Result.textContent = inputFirst.value / inputSecond.value;
         })
 
